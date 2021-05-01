@@ -26,7 +26,7 @@ STATIC_ROOT= BASE_DIR / "static"
 SECRET_KEY = ')q-zt1ok$!f8^gw$wzv2uf9+1a^*#*)+o-(sz(*kj^=4)9oieo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','localhost']
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #
@@ -169,4 +169,4 @@ MAILCHIMP_EMAIL_LIST_ID='8a947222f7'
 
 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
