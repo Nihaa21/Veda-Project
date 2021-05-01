@@ -39,7 +39,7 @@ ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','localhost']
 # EMAIL_HOST_PASSWORD = 'navforever'
 # EMAIL_PORT = 587
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['test-thatssoveda.herokuapp.com','localhost']
 
 
 # Application definition
