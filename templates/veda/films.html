@@ -1,0 +1,169 @@
+{% extends "veda/home.html" %}
+{% load static %}
+{% block icon %}<i class="fas fa-video"></i>{% endblock %}
+{% block body_block %}
+
+
+
+<div class="outer ">
+  <div class=" middle">  </div>
+
+
+
+
+
+ <div class="view">
+   <div class="mask rgba-black-light align-items-cente">
+
+<!-- Content -->
+<div class="container main-cont">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-md-12  white-text text-center intro-films">
+      <h1 class="h1-reponsive white-text  pt-md-5  wow fadeInDown films-heading" data-wow-delay="0.3s">MY FILMS</h1>
+      <!-- <hr class="hr-light  wow fadeInDown" data-wow-delay="0.4s">
+      <h5 class=" mb-4 white-text wow fadeInDown" data-wow-delay="0.4s">TRAVELLER | FILMMAKER</h5> -->
+      <div class="divToShowHide">
+        <p class="line-1 anim-typewriter">Animation typewriter style using css steps()</p>
+
+      </div>
+
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</div>
+<!-- Content -->
+</div>
+</div>
+</div>
+
+
+<div class="film-video">
+<h2 class=" text-center film-top">DIRECTOR & CINEMATOGRAPHY SHOWREELS</h2>
+<hr class="hr-film">
+  <video class="text-center" controls>
+    <source src="{% static "videos/film.mp4" %}" type="video/mp4">
+        <source src="{% static "videos/film.mp4" %}" type="video/mp4" class="img-responsive">
+        Your browser does not support HTML5 video.
+
+
+      </video>
+
+</div>
+
+
+<div class="container text-center yt-videos yt-section">
+  <h2>YouTube channel</h2>
+<hr class="hr-yt">
+</div>
+
+<div class="container text-center">
+  <iframe class="youtube-iframe "  src="https://www.youtube.com/embed/O8PZLggXosE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+
+<div class="container text-center yt-videos">
+  <iframe class="youtube-iframe "  src="https://www.youtube.com/embed/Z36OcqEIHsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<div class="container text-center yt-videos">
+<iframe class="youtube-iframe " src="https://www.youtube.com/embed/aZ_UOmlQWjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--insta-link--------------------------->
+<div class="container-fluid insta-all">
+
+<h3 class="text-center insta-tag-all"> <a href="#"> @thatssoveda</a></h3>
+<div class="row">
+   <div class="col-md-2 col-sm-6 col-xs-6 insta-div hvrbox">
+
+     <a href="">
+       <img src="{% static "images/veda3.jpeg" %}" class="img-responsive hvrbox-layer_bottom " style="">
+
+     <div class="hvrbox-layer_top">
+       <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+     </div>
+</a>
+   </div>
+
+   <div class="col-md-2 col-sm-6 col-xs-6 insta-div hvrbox">
+     <a href="">
+       <img src="{% static "images/v-jacket.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+       </a>
+   </div>
+
+   <div class="col-md-2 col-sm-6 col-xs-6 insta-div hvrbox">
+     <a href="">
+       <img src="{% static "images/insta-4.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+          </a>
+   </div>
+
+   <div class="col-md-2 col-sm-6 col-xs-6 insta-div hvrbox">
+        <a href="">
+       <img src="{% static "images/veda-mug.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+           </a>
+   </div>
+   <div class="col-md-2 col-sm-6 col-xs-6 insta-div hvrbox">
+        <a href="">
+       <img src="{% static "images/veda1.jpeg" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+           </a>
+   </div>
+   <div class="col-md-2 col-sm-6 col-xs-6 insta-div hvrbox">
+        <a href="">
+       <img src="{% static "images/veda-book.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+           </a>
+   </div>
+
+</div>
+</div>
+
+
+
+
+{% endblock %}

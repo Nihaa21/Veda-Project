@@ -1,0 +1,47 @@
+{% extends "veda/portrait.html" %}
+{% block body_block %}
+
+<!-- <h3>food</h3>
+  {% for photo in object_list %}
+{% if photo.food_image %}
+
+<img class="" src="{{ photo.food_image.url }}" alt=""  style="object-fit:cover;">
+
+{% endif %}
+{% endfor %} -->
+
+
+
+
+<div class="container-fluid photo-scroll">
+  <div class="row">
+    <div class="col-lg-3 " >
+      <div class="photo-info">
+        <h3>FOOD</h3>
+        <div class="info-para">
+<p>Suspendisse ante diam, tincidunt nec mauris in, consequat molestie libero. Proin ac mattis tortor. Fusce</p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-lg-9">
+      {% for photo in object_list %}
+      {% if photo.food_image %}
+      <div class="category-pic">
+          <img class="" src="{{ photo.food_image.url }}" alt=""  style="object-fit:cover;">
+      </div>
+
+
+      {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}

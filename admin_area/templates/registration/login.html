@@ -1,0 +1,21 @@
+{% extends 'veda/home.html' %}
+{% block title %}ThatsSoVeda | Login{% endblock %}
+
+{% block body_block %}
+
+<div class="container">
+<h2 class="ml-5">Login</h2>
+<br>
+
+
+<div class="form-group">
+
+<form class="ml-5 " method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <button class="btn btn-primary">Login</button>
+</form>
+</div>
+</div>
+{% endblock %}
