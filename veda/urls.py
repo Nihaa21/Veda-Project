@@ -24,7 +24,7 @@ urlpatterns = [
  path('portraits/',portrait_page.as_view(),name="portrait_page"),
  path('landscape/',landscape_page.as_view(),name="landscape_page"),
  path('food/',food_page.as_view(),name="food_page"),
- path('Add_Photo/',Add_Photo_view.as_view(),name="add_Photo"),
+ path('add_Photo/',Add_Photo_view.as_view(),name="add_Photo"),
 
 
  path('contact',views.contact,name="contact"),
