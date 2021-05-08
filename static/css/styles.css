@@ -1016,9 +1016,7 @@ transition: all 0.4s ease-in-out 0s;
   background-color: white;
 }
 
-.photo-scroll {
 
-}
 
 .photo-info {
 /* position: fixed; */
@@ -1046,7 +1044,9 @@ transition: all 0.4s ease-in-out 0s;
   width: 200px;
   color: grey;
 }
-
+.col-clicks{
+  margin-top: 260px;
+}
 /* -------------------films------------------------ */
 .outer {
   max-width: 100%;
