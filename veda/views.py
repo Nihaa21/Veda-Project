@@ -106,7 +106,7 @@ class Add_Post_view(CreateView):
     model = Post
     # bootstrap class to style form
     form_class=PostForm
-    template_name='veda/add_Post.html'
+    template_name='veda/add_post.html'
     # fields = ('title','title_tag','author','body')
 
     def get_context_data(self, *args, **kwargs):
@@ -229,7 +229,7 @@ class Add_Photo_view(CreateView):
     model = PotographyPost
     # bootstrap class to style form
     form_class=PhotoForm
-    template_name='veda/add_Photo.html'
+    template_name='veda/add_photo.html'
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
