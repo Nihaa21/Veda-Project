@@ -26,7 +26,7 @@ STATIC_ROOT= BASE_DIR / "static"
 SECRET_KEY = ')q-zt1ok$!f8^gw$wzv2uf9+1a^*#*)+o-(sz(*kj^=4)9oieo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','localhost']
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #
@@ -39,7 +39,7 @@ ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','localhost']
 # EMAIL_HOST_PASSWORD = 'navforever'
 # EMAIL_PORT = 587
 
-ALLOWED_HOSTS = ['test-thatssoveda.herokuapp.com','localhost']
+# ALLOWED_HOSTS = ['test-thatssoveda.herokuapp.com','localhost']
 
 
 # Application definition
