@@ -61,10 +61,8 @@ pass-test123 -->
   <!-- javascript -->
 
   <script src="https://apis.google.com/js/platform.js"></script>
-
-
   <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
-      <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular-route.js" data-semver="1.4.9"></script>
+  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular-route.js" data-semver="1.4.9"></script>
 
 
 </head>
@@ -304,6 +302,7 @@ pass-test123 -->
         <!-- ------------------------------------------------------------>
         <div class="on-the-blog">
           <h2>On The Blog</h2>
+          <div class="blog-line"></div>
 
         </div>
 
@@ -327,46 +326,26 @@ pass-test123 -->
 
               {% endif %}
             </div>
-
-
             <a class="post-a" href="{% url 'blog_details' post.pk %}">
               <p class="post-category-home"> {{ post.category }}</p>
               <div class="post-right">
                 <div class="box-border">
 
 
-                  <h3 class="post-title-home">
+                  <h4 class="post-title-home">
                     {{post.title.title}}
-                  </h3>
+                  </h4>
 
                   <p class="post-date-home">{{ post.post_date }}</p>
                 </div>
               </div>
             </a>
-
-
-
             <!-- <div class="line"></div> -->
+
           </div>
 
           {% endfor %}
         </div>
-
-
-
-        <!-- <div class="work">
-
-
-  <div class="overlay-work">
-    <img src="{% static "images/work.jpeg" %}" alt="Snow" style="width:100%;" class="img-fluid">
-      </div>
-      <div class="centered-work">
-        <h1>The Blog</h1>
-        <p>TRAVEL | WELLNESS | LIFESTYLE</p>
-        </div>
-</div> -->
-
-
 
         <div class="text-center" >
           <!-- <button type="button" class="btn btn-light "></button> -->
@@ -376,6 +355,7 @@ pass-test123 -->
 
 
       </div>
+
 
 
 

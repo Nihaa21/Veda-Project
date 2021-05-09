@@ -16,8 +16,11 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = os.path.join(BASE_DIR,'static')
 TEMPLATE_DIR= os.path.join(BASE_DIR,'templates')
-
 STATIC_ROOT= BASE_DIR / "static"
+
+
+
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -27,7 +30,7 @@ SECRET_KEY = ')q-zt1ok$!f8^gw$wzv2uf9+1a^*#*)+o-(sz(*kj^=4)9oieo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','localhost']
+ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','127.0.0.1']
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #
 

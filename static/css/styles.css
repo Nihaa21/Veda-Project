@@ -346,6 +346,7 @@ button:hover {
 
 .on-the-blog h2 {
   margin-top: 100px;
+  margin-bottom: 0;
   text-align: center;
   /* font-family: 'Bodoni Moda', serif; */
   font-family: 'Sorts Mill Goudy', serif;
@@ -357,12 +358,19 @@ button:hover {
 }
 
 .on-the-blog {
-  border-bottom: 0.1rem solid #dddddd;
+  /* border-bottom: 0.3rem dashed #dddddd; */
   border-spacing: 5px;
   /* padding-bottom: 10px; */
-  margin-bottom: 60px;
-  display: inline-block;
-  margin-left: 40%;
+  /* display: inline-block; */
+  margin:auto;
+  width: 50%;
+padding-bottom: 50px;
+}
+
+.blog-line{
+  border-bottom: 0.3rem dashed #dddddd;
+  width: 30%;
+  margin:auto;
 }
 
 .posts-home {
@@ -401,7 +409,7 @@ padding: 50px 65px 50px 65px;
   font-style: normal;
   letter-spacing: 0em;
   line-height: 1.5em;
-  font-size: 21px;
+  font-size: 24px;
 }
 
 .post-a .post-title-home {
@@ -424,36 +432,15 @@ padding: 50px 65px 50px 65px;
 
 .post-category-home, .post-date-home {
   color: grey;
-  font-size: 11px;
-  padding-top: 10px;
+  font-size: 14px;
+  /* padding-top: 10px; */
 }
-
-.post-left {
-  /* position: relative; */
-}
-
-.post-a .post-right {
-  /* position: absolute;
-  width: 50%;
-  top:75%;
-  left:0;
-  right:0;
-  margin-left: auto;
-  margin-right: auto; */
-  /* box-shadow: 10px 10px 20px grey; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #ffff; */
-  /* padding: 5px 10px; */
-}
-
-.box-border {
-  /* border: 0.5px solid #dddddd; */
-}
-
 .post-right {
-  padding: 10px;
+  /* padding: 10px; */
 }
-
+.post-date-home{
+  padding-top:10px;
+}
 .post-a {
   color: inherit;
   text-decoration: none;
@@ -526,7 +513,7 @@ padding-bottom: 200px;
 }
 
 .container-box {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .left-side2 {
@@ -535,10 +522,10 @@ padding-bottom: 200px;
   height: 832px;
   object-fit: cover;
   background-image: url(../images/aa1.jpeg);
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   /* height: 750px; */
 }
 
