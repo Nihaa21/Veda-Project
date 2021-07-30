@@ -187,10 +187,6 @@ class Delete_post_view(DeleteView):
         return context
 
 
-# class Photography_view(ListView):
-#     model=PotographyPost
-#     template_name='veda/photography.html'
-
 def photography(request):
     cat_menu = Category.objects.all()
     return render(request,'veda/photography.html',{'cat_menu':cat_menu})

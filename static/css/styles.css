@@ -349,10 +349,12 @@ button:hover {
   margin-bottom: 0;
   text-align: center;
   /* font-family: 'Bodoni Moda', serif; */
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 32.5px;
+  /* font-family: 'Sorts Mill Goudy', serif; */
+  /* font-size: 32.5px; */
   /* line-height: 42px; */
-  font-weight: bold;
+
+  font-weight: 500;
+  letter-spacing: 0.09em;
   /* letter-spacing: 0.03em; */
   /* border-bottom: 2px dashed #999; */
 }
@@ -501,32 +503,46 @@ padding-bottom: 200px;
 }
 
 .quote-img {
-  width: 700px;
+  width:100%;
   height: 832px;
   object-fit: cover;
-  background-size: cover;
-  background-image: url(../images/abc1.jpeg);
+  /* background-size: cover; */
+  background-image: url(../images/icecream.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  -moz-background-size: auto 100%;
+-webkit-background-size: auto 100%;
+-o-background-size: auto 100%;
+background-size:cover;
+
 }
 
 .container-box {
   margin-top: 50px;
 }
 
-.left-side2 {
+.quote-img2{
   /* background-color: #f2f2f2; */
-  width: 700px;
+  /* */
+  width: 100%;
   height: 832px;
   object-fit: cover;
-  background-image: url(../images/aa1.jpeg);
-  background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-  background-attachment: fixed;
-  /* height: 750px; */
+  background-image: url(../images/camera.png);
+    -moz-background-size: auto 100%;
+-webkit-background-size: auto 100%;
+-o-background-size: auto 100%;
+background-size:auto 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+/* background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed; */
+/* -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover; */
+
 }
 
 .right-side2 .right-heading {
@@ -561,7 +577,7 @@ padding-bottom: 200px;
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
-  /* font-weight: bold; */
+  font-weight: bold;
   width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -575,7 +591,7 @@ padding-bottom: 200px;
 .youtube-heading h4 {
   font-family: 'Amatic SC', cursive;
   /* font-family:"Montserrat"; */
-  /* font-weight: bold; */
+  font-weight: bold;
   width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -936,6 +952,7 @@ transition: all 0.4s ease-in-out 0s;
 
 .photo-col {
   padding: 7;
+  text-align: center;
 }
 
 .content-details {
@@ -981,8 +998,10 @@ transition: all 0.4s ease-in-out 0s;
   top: 20%;
 }
 
+
 /*
 ----------------portrait---------------- */
+
 .category-pic img {
   width: 895px;
   height: 503.34px;
@@ -1003,6 +1022,11 @@ transition: all 0.4s ease-in-out 0s;
   background-color: white;
 }
 
+.photography_visible{
+  visibility: hidden;
+  display: none;
+}
+
 
 
 .photo-info {
@@ -1011,7 +1035,7 @@ transition: all 0.4s ease-in-out 0s;
   /* Safari */
   position: sticky;
   /* position:sticky; */
-  top:40%;
+  top:24%;
   /* z-index: 2; */
   padding-left: 40px;
   margin-bottom: 50px;
@@ -1032,8 +1056,83 @@ transition: all 0.4s ease-in-out 0s;
   color: grey;
 }
 .col-clicks{
-  margin-top: 260px;
+  margin-top: 180px;
 }
+
+.photo-content-inner {
+  /* margin-left:20%; */
+  position: relative;
+  /* width: 100%; */
+  max-width: 400px;
+/* overflow: hidden; */
+
+
+}
+.photo-content-inner .content-overlay-inner {
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  background: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content-details-inner{
+
+  opacity: 1;
+}
+
+.content-details-inner {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content-details-inner h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details-inner p {
+  color: #fff;
+  font-size: 0.8em;
+}
+.content-image-inner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+.quick-link{
+  margin-top: 40px;
+  padding-left:10%;
+  padding-right:10%;
+}
+.quick-text{
+
+  margin-bottom: 50px;
+}
+
+
 /* -------------------films------------------------ */
 .outer {
   max-width: 100%;
