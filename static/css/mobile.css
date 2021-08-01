@@ -367,13 +367,14 @@ padding-right: 2%;
 .left-side{
   text-align: center;
   font-size: 30px;
+
 }
 
 .quote-img,.quote-img2{
   width:auto ;
   height: 432px;
   background-size: cover;
-    /* background-attachment:local; */
+    background-attachment:scroll;
 
 }
 

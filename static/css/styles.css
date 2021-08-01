@@ -503,7 +503,7 @@ padding-bottom: 200px;
 }
 
 .quote-img {
-  width:100%;
+  /* width:100%; */
   height: 832px;
   object-fit: cover;
   /* background-size: cover; */
@@ -533,15 +533,8 @@ background-size:cover;
 -o-background-size: auto 100%;
 background-size:auto 100%;
 background-repeat: no-repeat;
-background-attachment: fixed;
+ background-attachment: fixed;
 
-/* background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed; */
-/* -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover; */
 
 }
 
