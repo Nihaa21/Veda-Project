@@ -370,8 +370,8 @@ padding-right: 2%;
 }
 
 .quote-img,.quote-img2{
-  width:100%;
-  height: 432px;
+  background-attachment: fixed;
+    background-size: contain;
     /* background-attachment:local; */
 
 }
