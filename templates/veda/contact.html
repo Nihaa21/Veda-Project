@@ -85,13 +85,13 @@
 
 
 
-{% if name %}
+<!-- {% if name %}
 <div class="jumbotron text-center">
   <h4>Thanks {{ name }} !</h4>
   <p>Got your Message.</p>
 </div>
 
-{% else %}
+{% else %} -->
 
 
 
@@ -115,7 +115,10 @@
         <input type="hidden" name="_url" value="https://test-thatssoveda.herokuapp.com/contact">
         <input type="hidden" name="_template" value="box">
       <input type="hidden" name="_captcha" value="false">
-        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+      <input type="hidden" name="_subject" value="New Message form Your Website!">
+
+
+        <input type="hidden" name="_next" value="https://test-thatssoveda.herokuapp.com/contact">
           <div class="form-group">
             <label for="exampleInputPassword1">Name</label>
             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Full Name" name="name" required>
