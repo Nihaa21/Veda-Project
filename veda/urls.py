@@ -20,11 +20,12 @@ urlpatterns = [
  path('about',views.about,name="about"),
  path('films',views.films,name="films"),
 
- path('photography',views.photography,name="photography"),
- path('portraits/',portrait_page.as_view(),name="portrait_page"),
- path('landscape/',landscape_page.as_view(),name="landscape_page"),
- path('food/',food_page.as_view(),name="food_page"),
+ path('photography/',views.photography,name="photography"),
+ path('film_photography/',portrait_page.as_view(),name="portrait_page"),
+ path('digital/',landscape_page.as_view(),name="landscape_page"),
+ path('commissioned/',food_page.as_view(),name="food_page"),
  path('add_Photo/',Add_Photo_view.as_view(),name="add_Photo"),
+
 
 
  path('contact',views.contact,name="contact"),

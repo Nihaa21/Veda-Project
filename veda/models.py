@@ -22,8 +22,8 @@ class Category(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
-    title_tag = models.CharField(max_length=255)
-    author = models.ForeignKey(User,on_delete=models.CASCADE)
+    # title_tag = models.CharField(max_length=255)
+    # author = models.ForeignKey(User,on_delete=models.CASCADE)
     # body=models.TextField()
     Blog_cover_image= models.ImageField(blank=True,null=True, upload_to="images/")
     Blog_post_image_1= models.ImageField(blank=True,null=True, upload_to="images/")
@@ -34,8 +34,8 @@ class Post(models.Model):
     Blog_post_image_6= models.ImageField(blank=True,null=True, upload_to="images/")
     body=RichTextField(blank=True,null=True)
     post_date=models.DateField(auto_now_add=True)
-    category = models.CharField(max_length=255,default='Travel')
-    snippet = models.CharField(max_length=255)
+    category = models.CharField(max_length=255)
+    # snippet = models.CharField(max_length=255)
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)

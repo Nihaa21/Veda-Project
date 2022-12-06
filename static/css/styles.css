@@ -7,6 +7,7 @@ body {
   overflow-x: hidden !important;
   /* background-color: #f2f2f2; */
   /* background-color:#fafafa; */
+
 }
 
 .body-animation{
@@ -243,7 +244,7 @@ button:hover {
   margin-top: 60px;
 }
 
-.polaroid a {
+/* .polaroid a {
   background: #ffffff;
   display: inline-block;
   margin: 55px 10px 75px 50px;
@@ -258,7 +259,7 @@ button:hover {
   transition: all .20s linear;
   z-index: 0;
   position: relative;
-}
+} */
 
 .polaroid a:after {
   color: #333;
@@ -282,7 +283,6 @@ button:hover {
 .polaroid a:hover {
   text-decoration: none;
 }
-
 /* .polaroid a:hover {
        -webkit-transform: scale(1.2);
        -moz-transform: scale(1.2);
@@ -292,37 +292,38 @@ button:hover {
        -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
        box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
      } */
-.polaroid {
-  /* background-color:#f8f1f1; */
-  background-color: #f2f2f2;
-  margin-left: 30px;
-  padding-left: 20px;
-  /* border: 0.20rem dashed #999; */
-  margin-top: 40px;
-}
+     .polaroid {
+       /* background-color:#f8f1f1; */
+       background-color: #f2f2f2;
+       margin-left: 30px;
+       padding-left: 20px;
+       /* border: 0.20rem dashed #999; */
+       margin-top: 90px;
+       padding: 70px;
+     }
 
-.polaroid-content {
-  position: relative;
-  float: right;
-  margin-top: 15%;
-  margin-right: 8%;
-  /* padding-right:5%; */
-  width: 40%;
-  display: inline-block;
-}
+     .polaroid-content {
+       position: relative;
+       float: right;
+       /* margin-top: 15%; */
+       margin-right: 8%;
+       /* padding-right:5%; */
+       width: 40%;
+       display: inline-block;
+     }
 
-.polaroid-heading {
-  /* font-family: 'Amatic SC', cursive; */
-  /* font-family: 'Bodoni Moda', serif; */
-  font-family: 'Sorts Mill Goudy', serif;
-  font-weight: lighter;
-  /* font-family: 'Playfair Display', serif; */
-  font-style: normal;
-  letter-spacing: 0.03em;
-  line-height: 1.3em;
-  /* width:80%; */
-  text-align: center;
-}
+     .polaroid-heading {
+       /* font-family: 'Amatic SC', cursive; */
+       /* font-family: 'Bodoni Moda', serif; */
+       font-family: 'Sorts Mill Goudy', serif;
+       font-weight: lighter;
+       /* font-family: 'Playfair Display', serif; */
+       font-style: normal;
+       letter-spacing: 0.03em;
+       line-height: 1.3em;
+       /* width:80%; */
+       text-align: center;
+     }
 
 .content {
   /* font-family:'Montserrat'; */
@@ -345,7 +346,7 @@ button:hover {
 }
 
 .on-the-blog h2 {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 0;
   text-align: center;
   /* font-family: 'Bodoni Moda', serif; */
@@ -367,7 +368,10 @@ button:hover {
   margin:auto;
   width: 50%;
 padding-bottom: 50px;
+/* border:solid 2px #41403E; */
 }
+
+
 
 .blog-line{
   border-bottom: 0.3rem dashed #dddddd;
@@ -602,7 +606,7 @@ background-repeat: no-repeat;
 }
 
 .yt-button {
-  margin: 90px 0;
+  margin: 60px 0;
 }
 
 .ytssubscribe {
@@ -1001,7 +1005,7 @@ transition: all 0.4s ease-in-out 0s;
 }
 
 .category-pic {
-  /* margin-top:50px; */
+  margin-top:50px;
   margin-bottom: 50px;
 }
 
@@ -1016,8 +1020,8 @@ transition: all 0.4s ease-in-out 0s;
 }
 
 .photography_visible{
-  visibility: hidden;
-  display: none;
+  /* visibility: hidden;
+  display: none; */
 }
 
 
@@ -1028,10 +1032,11 @@ transition: all 0.4s ease-in-out 0s;
   /* Safari */
   position: sticky;
   /* position:sticky; */
-  top:24%;
+  top:33%;
   /* z-index: 2; */
   padding-left: 40px;
   margin-bottom: 50px;
+  /
 }
 
 .photo-info h3 {
@@ -1127,6 +1132,77 @@ transition: all 0.4s ease-in-out 0s;
 
 
 /* -------------------films------------------------ */
+
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.flex-container img{
+  object-fit:cover;
+  align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+
+.films-left{
+  /* flex: 50%; */
+  margin-left: 60px;;
+}
+
+.films-right{
+  margin: auto auto auto 0px;
+  height: 70%;
+  width: 45%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: black;
+  font-family: 'Sorts Mill Goudy', serif;
+    /* font-weight: normal;
+    font-style: normal; */
+    animation:normal;
+}
+
+.films-control-left{
+  background: white !important;
+  position: absolute;
+    left: -10px !important;
+    /* right: -px !important; */
+    width: 10%;
+}
+.films-control-right{
+  background: white !important;
+  position: absolute;
+    right: -10px !important;
+    width: 10%;
+}
+
+
+
+.carousel-indicators li{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgb(0, 0, 0);
+  width: 8px;
+    height: 8px;
+    margin: 2px;
+  
+}
+.carousel-indicators .active{
+  background-color: black;
+  width: 8px;
+    height: 8px;
+    margin: 2px;
+  
+}
+.carousel-indicators{
+  top: 103%;
+  z-index: -15;
+}
+.mywork{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .outer {
   max-width: 100%;
   height: 100vh;
@@ -1280,6 +1356,7 @@ video {
   background-color: black;
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-left: 45%;
 }
 
 .hr-yt {
@@ -1342,9 +1419,8 @@ video {
 }
 
 .insta-all {
-  margin-top: 50px;
-  padding: 100px 170px 0 170px;
-  margin-top: 20px;
+  margin-top:0px;
+  padding: 40px 170px 0 170px;
 }
 
 .insta-div img {
@@ -1447,10 +1523,14 @@ video {
 }
 
 /* -----------------footer------------------------ */
+
+.footer-navbar{
+  padding-left: 0px;
+}
 .footer-bs {
   /* background-color: #3c3d41; */
   background-color: #f2f2f2;
-  padding: 60px 40px 10px 40px;
+  padding: 40px 40px 10px 40px;
   /* color: rgba(255,255,255,1.00); */
   color: black;
   margin-bottom:0px;
@@ -2228,6 +2308,34 @@ img.hover-shadow {
 .hvrbox.active .hvrbox-text_mobile {
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* tab */
 @media only screen and (max-width: 768px) {}

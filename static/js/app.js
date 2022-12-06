@@ -113,14 +113,6 @@ function showSlides(n) {
 }
 
 
-
-
-
-
-
-
-
-
 // ------------contact-----------
 document.querySelector('#contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
@@ -128,6 +120,12 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
   });
+
+
+// ------------films-----------
+
+
+
 
 
 //  $('.navbar-container ul li a').on('click', function() {

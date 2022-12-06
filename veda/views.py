@@ -193,7 +193,7 @@ def photography(request):
 
 class portrait_page(ListView):
     model = PotographyPost
-    template_name='veda/portrait.html'
+    template_name='veda/film_photography.html'
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -203,7 +203,7 @@ class portrait_page(ListView):
 
 class landscape_page(ListView):
     model = PotographyPost
-    template_name='veda/landscape.html'
+    template_name='veda/digital.html'
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -213,7 +213,7 @@ class landscape_page(ListView):
 
 class food_page(ListView):
     model = PotographyPost
-    template_name='veda/food.html'
+    template_name='veda/commissioned.html'
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()

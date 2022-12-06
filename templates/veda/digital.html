@@ -1,0 +1,106 @@
+{% extends "veda/film_photography.html" %}
+{% block photo_navbar %} <p>hi</p>{% endblock %}
+
+{% block body_block %}
+
+<!-- <h3>landscape</h3>
+  {% for photo in object_list %}
+{% if photo.landscape_image %}
+
+<img class="" src="{{ photo.landscape_image.url }}" alt=""  style="object-fit:cover; height:500px; width:500px;">
+
+{% endif %}
+{% endfor %} -->
+
+
+
+
+
+
+
+
+<div class="container-fluid photo-scroll">
+  <div class="row">
+    <div class="col-lg-3 " >
+      <div class="photo-info">
+        <h3>DIGITAL</h3>
+        <div class="info-para">
+<p>Suspendisse ante diam, tincidunt nec mauris in, consequat molestie libero. Proin ac mattis tortor. Fusce</p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-clicks col-lg-9">
+      {% for photo in object_list %}
+      {% if photo.landscape_image %}
+      <div class="category-pic">
+          <img class="" src="{{ photo.landscape_image.url }}" alt=""  style="object-fit:cover;">
+      </div>
+
+
+      {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="container quick-link">
+
+
+  <div class="quick-text text-center">
+    <h3>VIEW MORE</h3>
+  </div>
+
+
+<div class="row">
+
+  <div class="col-lg-6 photo-col">
+
+
+      <div class="photo-content-inner">
+        <a href="{% url 'landscape_page' %}">
+          <div class="content-overlay-inner"></div>
+          <img class="content-image-inner" src="../static/images/portrait.jpg">
+          <div class="content-details-inner fadeIn-top portrait-text">
+            <h3>FILM PHOTOGRAPHY</h3>
+            <p>- View -</p>
+          </div>
+        </a>
+      </div>
+
+
+  </div>
+
+  <div class="col-lg-6 photo-col">
+
+
+      <div class="photo-content-inner">
+        <a href="{% url 'food_page' %}" >
+          <div class="content-overlay-inner"></div>
+          <img class="content-image-inner" src="../static/images/landscape.jpg">
+          <div class="content-details-inner fadeIn-top landscape-text">
+            <h3>COMMISSIONED</h3>
+            <p>- View -</p>
+          </div>
+        </a>
+      </div>
+
+
+  </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+{% endblock %}

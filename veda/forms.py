@@ -11,29 +11,25 @@ for item in choices:
 class PostForm(forms.ModelForm):
     class Meta:
         model=Post
-        fields=('title', 'title_tag','author','category','body','snippet','Blog_cover_image','Blog_post_image_1','Blog_post_image_2','Blog_post_image_3','Blog_post_image_4','Blog_post_image_5','Blog_post_image_6')
+        fields=('title','category','body','Blog_cover_image','Blog_post_image_1','Blog_post_image_2','Blog_post_image_3','Blog_post_image_4','Blog_post_image_5','Blog_post_image_6')
 
         widgets={
         'title':forms.TextInput(attrs={'class':'form-control'}),
-        'title_tag':forms.TextInput(attrs={'class':'form-control'}),
-        'author':forms.Select(attrs={'class':'form-control'}),
-        'category':forms.Select(choices=choice_list, attrs={'class':'form-control'}),
+        'category':forms.TextInput(attrs={'class':'form-control'}),
         'body':forms.Textarea(attrs={'class':'form-control'}),
-        'snippet':forms.Textarea(attrs={'class':'form-control'}),
         }
 
 class EditForm(forms.ModelForm):
     class Meta:
         model=Post
-        fields=('title', 'title_tag' ,'category','body','snippet','Blog_cover_image','Blog_post_image_1','Blog_post_image_2','Blog_post_image_3','Blog_post_image_4','Blog_post_image_5','Blog_post_image_6')
+        fields=('title' ,'category','body','Blog_cover_image','Blog_post_image_1','Blog_post_image_2','Blog_post_image_3','Blog_post_image_4','Blog_post_image_5','Blog_post_image_6')
 
         widgets={
         'title':forms.TextInput(attrs={'class':'form-control'}),
-        'title_tag':forms.TextInput(attrs={'class':'form-control'}),
-        'category':forms.Select(choices=choice_list, attrs={'class':'form-control'}),
+        # 'title_tag':forms.TextInput(attrs={'class':'form-control'}),
+        'category':forms.TextInput(attrs={'class':'form-control'}),
         # 'author':forms.Select(attrs={'class':'form-control'}),
         'body':forms.Textarea(attrs={'class':'form-control'}),
-        'snippet':forms.Textarea(attrs={'class':'form-control'}),
         }
 
 class PhotoForm(forms.ModelForm):

@@ -77,6 +77,22 @@ visibility: hidden;
 
 
 /* ------------films----------------- */
+
+.flex-container{
+  display: flex;
+  flex-direction: column !important;
+  margin: auto;
+}
+.films-right{
+  margin: 5px auto auto 0px;
+  /* height: 60%; */
+  width: 100%;
+  text-align: center;
+}
+.films-left{
+  margin-left: 0px;;
+}
+
 .middle{
   height: 90vh;
 }
@@ -143,6 +159,17 @@ text-align: center;
   to{border-right-color: transparent;}
 }
 
+.flex-container {
+    flex-direction: row;
+    width: auto;
+
+  }
+  .flex-container img{
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
 /* ------------photography----------------- */
 
 
@@ -501,6 +528,7 @@ height: 100vh;
 .polaroid img {
   width: 250px;
   height:250px;
+  margin: auto;
 }
 
 
@@ -517,7 +545,7 @@ height: 100vh;
   position: relative;
   float:none;
   margin-top:8%;
-  padding:0 5%;
+  padding: 0 5% 0 9%;
   margin-right:0;
   width:95%;
   display:inline-block;
@@ -849,7 +877,9 @@ margin-top: 50%;
 .hide-phone{
   display: none;
 }
-
+.footer-navbar{
+  padding-left: 15px;
+}
 
 
 
