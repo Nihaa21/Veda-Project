@@ -1,1 +1,1 @@
-web: gunicorn veda.wsgi --log-file -
+web: gunicorn thatssoveda.wsgi --log-file -
