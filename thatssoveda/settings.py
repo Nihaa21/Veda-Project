@@ -30,7 +30,7 @@ SECRET_KEY = ')q-zt1ok$!f8^gw$wzv2uf9+1a^*#*)+o-(sz(*kj^=4)9oieo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS=['test-thatssoveda.herokuapp.com','127.0.0.1','veda-test.herokuapp.com']
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #
 
