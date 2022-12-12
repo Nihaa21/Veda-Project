@@ -1,1 +1,1 @@
-web:gunicorn thatssoveda.wsgi --log-file -
+web: gunicorn thatssoveda.wsgi --log-file -
