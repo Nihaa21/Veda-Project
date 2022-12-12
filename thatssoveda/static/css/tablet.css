@@ -1,0 +1,337 @@
+
+@media (min-width: 426px) and (max-width: 1025px) {
+
+
+/* .hide1, .hide2{
+  visibility: hidden;
+} */
+  .social-media{
+    font-size: 1.4rem;
+    /* margin-top:17px; */
+  }
+
+
+  .polaroid img {
+    width: 250px;
+    height:250px;
+  }
+
+
+  .polaroid{
+
+
+    margin-left:0px;
+    margin-top: 40px;
+    padding: 30px 0;
+
+
+  }
+  .polaroid-content{
+    position: relative;
+    float:none;
+    margin-top:8%;
+    padding:0 5%;
+    margin-right:0;
+    width:95%;
+    display:inline-block;
+
+
+  }
+
+  .content{
+  /* font-family:'Montserrat'; */
+  font-family: 'Anonymous Pro', monospace;
+  text-align:center;
+  justify-content: center;
+  padding-top:0px;
+  }
+  .polaroid a {
+         background: #ffffff;
+         /* display: inline-block; */
+         margin:0 auto;
+
+         padding: 10px 10px 25px;
+         text-align: center;
+         text-decoration: none;
+         -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .4);
+         -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .4);
+         box-shadow: 0 4px 6px rgba(0, 0, 0, .4);
+         -webkit-transition: all .20s linear;
+         -moz-transition: all .20s linear;
+         transition: all .20s linear;
+         z-index: 0;
+         position: relative;
+
+       }
+
+
+  .polaroid-inner{
+    text-align: center;
+    display: block;
+  }
+
+
+  .insta{
+    display: none;
+  }
+
+
+  .quote{
+
+    font-family: 'Sorts Mill Goudy', serif;
+    width:auto;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+      top: 0%;
+      left: 0%;
+      transform:none;
+      padding: 50px;
+
+
+
+  }
+
+  .left-side{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .quote-img{
+    width:100%;
+    height: 432px;
+      background-attachment:local;
+
+  }
+
+  .right-side2{
+    position: relative;
+      top: 0%;
+      left: 0%;
+      transform:none;
+  padding: 60px;
+  }
+
+  .right-side2 .right-heading{
+    font-size: 30px;
+
+
+  }
+
+  .right-para{
+
+        font-size: 14px;
+
+  }
+
+
+/* ---------------------films--------------------- */
+
+video {
+height:90%;
+width:90%;
+}
+.films-left{
+  margin-left: auto;
+}
+.flex-container {
+    flex-direction: row;
+    width: auto;
+
+  }
+  .flex-container img{
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+/* ------------photography----------------- */
+
+
+.photo-content .content-overlay {
+
+  opacity: 1;
+  background: rgba(0,0,0,0.5);
+
+
+}
+.content-details {
+
+  opacity: 1;
+
+}
+.portrait-text,.landscape-text,.food-text{
+  margin-top: 40%;
+}
+
+.content-image{
+  width: 100%;
+  height: 400px;
+
+}
+
+.photo-col {
+  /* margin-bottom: 10px; */
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+
+
+
+/* ----------------blog details----------------------------- */
+
+.blog-heading{
+  padding-top: 0%;
+}
+
+.header_img{
+  object-fit: cover;
+height:500px;
+width:400px;
+
+
+}
+.blog-heading{
+  margin-bottom: 30px;
+}
+
+.blog-title{
+  line-height:normal;
+}
+.post-body{
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-top: 50px;
+  /* font-family: 'Playfair Display', serif; */
+
+
+}
+
+
+/* ----------contact--------------- */
+
+.place {
+  margin-left: 32px;
+}
+
+.phone {
+  margin-left: 26px;
+}
+
+.gmail {
+  margin-left: 23px;
+}
+
+
+.contact-details{
+  margin-top: 60px;
+margin-left: 0;
+padding: 10%;
+background-color:  #f2f2f2;
+}
+
+
+
+.contact-list {
+  padding: 0;
+}
+/* ------------portrait----------------------- */
+.category-pic img{
+  width: 100%;
+  /* height: 233.33px; */
+    height: 503.34px;
+}
+.category-pic{
+  margin-bottom:20px;
+}
+
+
+.insta-all{
+  margin-top: 50px;
+  padding:30px 50px 0 30px;
+  margin-top: 20px;
+}
+
+.insta-row-home {
+    display: inherit;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left !important;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+
+/* -------------about--------------------- */
+.left-side2-about{
+padding:10% 20px;
+
+}
+.left-side2-about img{
+ width: 420px;
+ height: 480px;
+
+}
+
+.right-side2-about .right-heading-about{
+  font-size: 28px;
+
+}
+.right-side2-about{
+margin:auto;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-right: 0 !important;
+}
+
+.bg-color{
+  background-color: #f2f2f2;
+}
+
+
+
+/* ---------footer--------------------- */
+
+.hide-phone{
+  display:none
+}
+
+
+ .footer-ns #mc_embed_signup{
+  width:150px;
+}
+
+.footer-social .social-media-footer a{
+  padding:3px;
+
+}
+.footer-social{
+  padding: 0 !important;
+}
+.footer-bs .footer-brand p{
+  font-size: 10px;
+  text-align: center;
+}
+
+
+}

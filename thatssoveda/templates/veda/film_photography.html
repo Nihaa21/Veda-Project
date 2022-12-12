@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<!-- username-vedashree
+pass-test123 -->
+
+
+<!-- portrait=film photograph
+landscape=digital
+food=commissioned -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+  <title>{% block title %} ThatsSoVeda {% endblock %}</title>
+
+  <!---jquery------>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- bootstrap n css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- navbar -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/> -->
+
+
+
+
+  <link rel="stylesheet" href="/static/css/styles.css?{% now "U" %} ">
+  <link rel="stylesheet" href="/static/css/mobile.css?{% now "U" %} ">
+  <link rel="stylesheet" href="/static/css/tablet.css?{% now "U" %} ">
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/7272020985.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- javascript -->
+
+  <script src="https://apis.google.com/js/platform.js"></script>
+
+
+
+
+
+  </script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6107e691a272040012096140&product=inline-share-buttons" async="async"></script>
+</head>
+
+<body>
+
+<div class="photo-nav">
+
+
+  <section class="top-section">
+
+
+    <div class="container">
+      <div class="row" id="home-top">
+
+        <div class="col-lg-3 col-md-3">
+          <div class="changing-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 heading-block">
+          <div class="heading">
+            <h1> <a href="#">ThatsSoVeda</a></h1>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3">
+          <div class="social-media">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></a></i>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subtitle">
+        <p>Filmmaker | Traveller</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="navigation photography_visible">
+
+    {% url 'home' as home %}
+    {% url 'add_Post' as add_Post %}
+    {% url 'Blog' as Blog %}
+    {% url 'blog_details' as blog_details %}
+    {% url 'about' as about %}
+    {% url 'films' as films %}
+    {% url 'photography' as photography %}
+    {% url 'contact' as contact %}
+    {% url 'category' as category%}
+    {% url 'portrait_page' as portrait_page%}
+
+
+
+    <nav class="navbar navbar-expand-lg  " style="margin:5px;">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+        <div class="bars">
+          <i class="fas fa-bars"></i>
+        </div>
+      </button> -->
+
+      <div class=" menu-btn" type="button" onclick="lockScroll();" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <div class="menu-btn__burger " ></div>
+       </div>
+
+      <div class="navbar-container collapse navbar-collapse " id="navbarNavDropdown">
+
+
+        <ul class="navbar-nav  ">
+
+          <li class="nav-item  {% if request.path == home %} active {% endif %}">
+            <a class="nav-link" href="{% url 'home' %}">HOME</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item {% if request.path == about %} active {% endif %}">
+            <a class="nav-link " href="{% url 'about' %}">ABOUT</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item {% if request.path == films %} active {% endif %}">
+            <a class="nav-link" href="{% url 'films' %}">FILMS</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item  active ">
+            <a class="nav-link" href="{% url 'photography' %}">PHOTOGRAPHY</a>
+            <div class="underline"></div>
+          </li>
+
+
+          {% if cat_menu %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{% url 'Blog' %}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              BLOG
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item mb-2 mt-2" href="{% url 'Blog' %}">ALL POST</a>
+
+              {% for item in cat_menu %}
+              <a class="dropdown-item mb-2 text-uppercase" href="{% url 'category' item %}">{{ item }}</a>
+              {% endfor %}
+            </div>
+            <!-- <div class="underline"></div> -->
+          </li>
+          {% endif %}
+
+
+
+          <li class="nav-item {% if request.path == contact %} active {% endif %}">
+            <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+            <div class="underline"></div>
+          </li>
+
+          <!--       if logged in this menu will be shown----------------------->
+
+          {% if user.is_authenticated %}
+          <li class="nav-item {% if request.path == add_Post %} active {% endif %}">
+            <a class="nav-link" href="{% url 'add_Post' %}">ADD POST</a>
+            <div class="underline"></div>
+          </li>
+
+          <li class="nav-item {% if request.path == add_Post %} active {% endif %}">
+            <a class="nav-link" href="{% url 'add_Photo' %}">ADD PHOTO</a>
+            <div class="underline"></div>
+          </li>
+
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="{% url 'add_category' %}">ADD CATEGORY</a>
+        <div class="underline"></div>
+      </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">LOGOUT</a>
+            <div class="underline"></div>
+          </li>
+
+          {% else %}
+
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">LOGIN</a>
+        <div class="underline"></div>
+      </li> -->
+
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="{% url 'register' %}">REGISTER</a>
+        <div class="underline"></div>
+      </li> -->
+
+
+
+          {% endif %}
+
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+</div>
+
+
+
+
+{% block body_block %}
+
+
+<div class="container-fluid photo-scroll">
+  <div class="row">
+    <div class="col-lg-3 col-12 photo-info-outer" >
+      <div class="photo-info">
+        <h3>FILM PHOTOGRAPHY</h3>
+        <div class="info-para">
+<p>Suspendisse ante diam, tincidunt nec mauris in, consequat molestie libero. Proin ac mattis tortor. Fusce</p>
+        </div>
+        <!-- <div class="sharethis-inline-share-buttons"></div> -->
+
+      </div>
+
+    </div>
+    <div class="col-clicks col-lg-9 col-12">
+
+        {% for photo in object_list %}
+        {% if photo.portrait_image %}
+        <div class="category-pic">
+            <img class="image-fluid" src="{{ photo.portrait_image.url }}" alt=""  style="object-fit:cover;">
+        </div>
+
+
+        {% endif %}
+        {% endfor %}
+
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+</div>
+
+<!-- <div class="back-btn text-center mt-5 mb-5">
+  <a href="{% url 'Blog' %}" class="btn btn-dark btn-md">Back</a>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container quick-link">
+
+
+  <div class="quick-text text-center">
+    <h3>VIEW MORE</h3>
+  </div>
+
+
+<div class="row">
+
+  <div class="col-lg-6 photo-col">
+
+
+      <div class="photo-content-inner">
+        <a href="{% url 'landscape_page' %}">
+          <div class="content-overlay-inner"></div>
+          <img class="content-image-inner" src="{% static "images/portrait.jpg" %}">
+          <div class="content-details-inner fadeIn-top portrait-text">
+            <h3>DIGITAL</h3>
+            <p>- View -</p>
+          </div>
+        </a>
+      </div>
+
+
+  </div>
+
+  <div class="col-lg-6 photo-col">
+
+
+      <div class="photo-content-inner">
+        <a href="{% url 'food_page' %}" >
+          <div class="content-overlay-inner"></div>
+          <img class="content-image-inner" src="{% static "images/landscape.jpg" %}">
+          <div class="content-details-inner fadeIn-top landscape-text">
+            <h3>COMMISSIONED</h3>
+            <p>- View -</p>
+          </div>
+        </a>
+      </div>
+
+
+  </div>
+
+
+</div>
+
+
+</div>
+
+{% endblock %}
+
+
+<!--insta-link--------------------------->
+<div class="container-fluid insta-all">
+
+<h3 class="text-center insta-tag-all"> <a href="#"> @thatssoveda</a></h3>
+<div class="row">
+   <div class="col-md-2 col-sm-4 col-xs-6 insta-div hvrbox">
+
+     <a href="">
+       <img src="{% static "images/veda3.jpeg" %}" class="img-responsive hvrbox-layer_bottom " style="">
+
+     <div class="hvrbox-layer_top">
+       <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+     </div>
+</a>
+   </div>
+
+   <div class="col-md-2 col-sm-4 col-xs-6 insta-div hvrbox">
+     <a href="">
+       <img src="{% static "images/v-jacket.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+       </a>
+   </div>
+
+   <div class="col-md-2 col-sm-4 col-xs-6 insta-div hvrbox">
+     <a href="">
+       <img src="{% static "images/insta-4.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+          </a>
+   </div>
+
+   <div class="col-md-2 col-sm-4 col-xs-6 insta-div hvrbox">
+        <a href="">
+       <img src="{% static "images/veda2.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+           </a>
+   </div>
+   <div class="col-md-2 col-sm-4 col-xs-6 insta-div hvrbox">
+        <a href="">
+       <img src="{% static "images/veda1.jpeg" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+           </a>
+   </div>
+   <div class="col-md-2 col-sm-4 col-xs-6 insta-div hvrbox">
+        <a href="">
+       <img src="{% static "images/veda-book.png" %}" class="img-responsive  hvrbox-layer_bottom " style="">
+       <div class="hvrbox-layer_top">
+         <div class="hvrbox-text"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+       </div>
+           </a>
+   </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section style="height:80px;"></section>
+<!-- <div class="row" style="text-align:center;">
+  <h2>Bootstrap Dark Footer UI</h2>
+</div> -->
+<!--Footer ------------>
+<footer class="footer-bs">
+  <div class="row">
+    <div class="col-md-3 footer-brand animated fadeInLeft">
+      <div class="heading-footer">
+        <h1> <a href="#">ThatsSoVeda</a></h1>
+      </div>
+      <div class="subtitle-footer">
+        <p>Filmmaker | Traveller</p>
+      </div>
+      <!-- <h2>Logo</h2> -->
+      <!-- <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p> -->
+
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-6 footer-nav animated fadeInUp">
+      <h4>Menu —</h4>
+      <div class="col-md-6">
+        <ul class="pages">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'films' %}">Films</a></li>
+          <li><a href="{% url 'photography' %}">Photography</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 hide-phone">
+        <ul class="list">
+          <li><a href="{% url 'Blog' %}" class="font-weight-bold">BLOG</a></li>
+            {% for item in cat_menu %}
+
+          <li ><a href="{% url 'category' item %}" class="text-uppercase">{{item}}</a></li>
+          <!-- <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Wellness</a></li> -->
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-6 col-xs-6 footer-social animated fadeInDown">
+      <h4>Follow</h4>
+      <div class="social-media-footer  mt-5">
+        <a href="#"><i class="fab fa-youtube "></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></a></i>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div class="col-md-3 footer-ns animated fadeInRight">
+      <!-- <h4>Newsletter</h4>
+      <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p> -->
+
+
+
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:#f2f2f2; clear:left;  width:270px;
+
+
+        }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="https://gmail.us1.list-manage.com/subscribe/post?u=9e3da1b5826809af3f7f3c507&amp;id=8a947222f7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate p-0" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        <!-- <h2>N E W S L E T E R</h2> -->
+        <h4 class="font-weight-bold pb-3">Newsletter</h4>
+          <p>Subscribe to my Newsletter to get lastest Blog updates!</p>
+      <div class="mc-field-group" style="padding-bottom:0; min-height:auto;">
+        <!-- <label for="mce-EMAIL">Email Address </label> -->
+        <input type="email" value="" name="EMAIL" placeholder="Enter Your Email"class="required email" id="mce-EMAIL">
+      </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9e3da1b5826809af3f7f3c507_8a947222f7" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark" style="margin-left: 0px;"></div>
+          </div>
+      </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      <!--End mc_embed_signup-->
+
+
+
+
+<!-- <form  action="{% url 'subscribe' %}" method="POST">
+{% csrf_token %}
+
+    <p>
+      <div class="input-group form-group">
+        {{ form }}
+        <input type="email" name="email" id="email" class="form-control" placeholder="Type Your Email">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+        </span>
+      </div>
+      </p>
+</form> -->
+
+
+
+    </div>
+
+
+    <section style="text-align:center; margin:20px auto auto;">
+    <small><p>© 2021 Vedashree Adige |
+      Designed by <a href="http://enfoplus.net" style=" color:inherit">Niharika Ghali</a></p></small>
+    </section>
+  </div>
+
+
+</footer>
+
+
+
+
+<script src="{% static 'js/app.js' %}"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>

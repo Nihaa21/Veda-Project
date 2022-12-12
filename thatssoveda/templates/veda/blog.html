@@ -1,0 +1,118 @@
+
+{% extends 'veda/home.html' %}
+{% load static %}
+{% block title %}ThatsSoVeda | Blogs{% endblock %}
+{% block icon %}<i class="fas fa-edit"></i>{% endblock %}
+{% block body_block %}
+
+<!-- <div class="container">
+
+
+<h1>Posts</h1>
+<ul>
+
+
+{% for post in object_list %}
+
+<li> <a href="{% url 'blog_details' post.pk %}">
+  {{ post.title }}</a> - {{ post.author.first_name }} {{ post.author.last_name }} -{{ post.author.email}}
+
+<a href="{% url 'category' post.category %}">  <p>Category - {{ post.category }}</p></a>
+
+  {{ post.post_date }} <br><br>
+  {{ post.snippet }}
+
+  <br>
+
+</li>
+<br>
+
+{% endfor %}
+</ul>
+</div> -->
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        {% for post in object_list %}
+            {% if forloop.counter0|divisibleby:3 and not forloop.first %}<div class="w-100"></div>{% endif %}
+            <div class="col">
+
+                {% if post.header_img %}
+                  <img src="{{ post.header_img.url }}" alt="" height="300px" width="300px" style="object-fit:cover;">
+                {% endif %}
+              <p> {{post.title}}</p>
+
+
+
+
+            </div>
+        {% endfor %}
+    </div>
+</div> -->
+
+
+
+
+
+
+  <!-- <h4 class="text-center mb-5">All Posts</h4> -->
+
+  <div class="all-post-top">
+  <img src="{% static "images/all-blogs-top.jpeg" %}" alt="Snow" style="width:100%;" class="img-fluid">
+<div class="overlay">
+  </div>
+    <div class="centered">
+      <h1>The Blog</h1>
+      <p>TRAVEL | WELLNESS | LIFESTYLE</p>
+      </div>
+
+  </div>
+
+<div class=" all-posts">
+  <div class="row  ">
+
+      {% for post in object_list %}
+          <div class="col-lg-3 col-sm-6 col-xs-12 per-post">
+              <div class="image-container">
+
+                 {% if post.Blog_cover_image %}
+                  <a href="{% url 'blog_details' post.pk %}">
+                    <img class="post-img img-fluid" src="{{ post.Blog_cover_image.url }}" alt="post-img" style="object-fit:cover;">
+                  </a>
+                 {% endif %}
+              </div>
+
+              <p class="post-category"> {{ post.category }}</p>
+
+            <h3 class="post-title">  <a  style="text-decoration:none;" href="{% url 'blog_details' post.pk %}">
+                 {{post.title.title}}
+               </a> </h3>
+
+
+
+            <p class="post-date">{{ post.post_date }}</p>
+
+            {% if user.is_authenticated %}
+            <a href="{% url 'update_Post' post.pk %}">Edit </a> <br>
+            <a href="{% url 'delete_Post' post.pk %}">Delete</a>
+            {% endif %}
+          </div>
+      {% endfor %}
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

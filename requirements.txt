@@ -48,7 +48,6 @@ mysqlclient==2.0.2
 nbformat==5.1.2
 nest-asyncio==1.5.1
 
-
 notebook==6.2.0
 packaging==20.8
 pandocfilters==1.4.3
