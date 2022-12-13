@@ -50,9 +50,9 @@ class Post(models.Model):
 
 
 class PotographyPost(models.Model):
-    film_Photography = models.ImageField(blank=True,null=True, upload_to="images/")
-    digital_Image = models.ImageField(blank=True,null=True, upload_to="images/")
-    commissioned_Image = models.ImageField(blank=True,null=True, upload_to="images/")
+    portrait_image = models.ImageField(blank=True,null=True, upload_to="images/")
+    landscape_image = models.ImageField(blank=True,null=True, upload_to="images/")
+    food_image = models.ImageField(blank=True,null=True, upload_to="images/")
 
     def get_absolute_url(self):
         # return reverse('blog_details',args=(str(self.id)) )

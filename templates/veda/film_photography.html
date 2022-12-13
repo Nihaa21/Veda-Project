@@ -101,7 +101,7 @@ food=commissioned -->
           <div class="social-media">
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-twitter"></a></i>
             <a href="#"><i class="fab fa-imdb"></i></a>
           </div>
         </div>
@@ -257,7 +257,7 @@ food=commissioned -->
     </div>
     <div class="col-clicks col-lg-9 col-12">
 
-        {% for photo in object_list %}
+        {% for photo in object_list reversed %}
         {% if photo.portrait_image %}
         <div class="category-pic">
             <img class="image-fluid" src="{{ photo.portrait_image.url }}" alt=""  style="object-fit:cover;">

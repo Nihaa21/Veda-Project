@@ -32,7 +32,7 @@
 
     </div>
     <div class="col-clicks col-lg-9">
-      {% for photo in object_list %}
+      {% for photo in object_list reversed %}
       {% if photo.landscape_image %}
       <div class="category-pic">
           <img class="" src="{{ photo.landscape_image.url }}" alt=""  style="object-fit:cover;">

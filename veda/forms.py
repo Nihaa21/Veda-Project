@@ -35,7 +35,7 @@ class EditForm(forms.ModelForm):
 class PhotoForm(forms.ModelForm):
     class Meta:
         model=PotographyPost
-        fields=('film_Photography','digital_Image','commissioned_Image')
+        fields=('portrait_image','landscape_image','food_image')
 
 
 class EmailSignupForm(forms.ModelForm):
