@@ -171,5 +171,7 @@ MAILCHIMP_DATA_CENTER='us1'
 MAILCHIMP_EMAIL_LIST_ID='8a947222f7'
 
 
+EFAULT_AUTO_FIELD='django.db.models.AutoField' 
+
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

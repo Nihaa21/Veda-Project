@@ -145,9 +145,10 @@ button:hover {
 .subtitle p {
   font-family: "Montserrat";
   text-align: center;
-  padding-top: 15px;
+  /* padding-top: 1px; */
   font-size: 1.2rem;
   /* text-transform: uppercase; */
+  color: #808080;
 }
 
 .dropdown-item {
@@ -513,11 +514,11 @@ padding-bottom: 200px;
 }
 
 .quote-img {
-  /* width:100%; */
+  width:100%;
   height: 832px;
   object-fit: cover;
   /* background-size: cover; */
-  background-image: url(../images/icecream.png);
+  background-image: url(../images/veda-quote.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   -moz-background-size: auto 100%;
@@ -537,7 +538,7 @@ background-size:cover;
   width: 100%;
   height: 832px;
   object-fit: cover;
-  background-image: url(../images/camera.png);
+  background-image: url(../images/veda-cam2.jpg);
     -moz-background-size: auto 100%;
 -webkit-background-size: auto 100%;
 -o-background-size: auto 100%;
@@ -578,8 +579,9 @@ background-repeat: no-repeat;
 
 .insta-heading h3 {
   text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 25px;
   font-weight: bold;
   width: 80%;
   text-align: center;
@@ -592,13 +594,15 @@ background-repeat: no-repeat;
 }
 
 .youtube-heading h4 {
-  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Amatic SC', cursive; */
   /* font-family:"Montserrat"; */
+  font-family: 'Sorts Mill Goudy', serif;
+       /* font-weight: lighter; */
   font-weight: bold;
   width: 80%;
   text-align: center;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .youtube-heading {
@@ -1672,6 +1676,7 @@ video {
   /* text-align: center; */
   padding-top: 6px;
   padding-left: 5%;
+  margin-right: 60px;
   font-size: 0.5rem;
   /* text-transform: uppercase; */
 }
